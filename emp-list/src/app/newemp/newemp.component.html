@@ -1,0 +1,47 @@
+<div class='card'>
+    
+    <div class='card-header'>
+     ADD NEW EMPLOYEE
+    </div>
+    <div class='card-body'>            
+      <div class='table-responsive'>
+        <form (ngSubmit)="Add()" #add="ngForm">
+        <table class='table'>       
+         
+          <tbody>  
+              <tr>
+                  <td> <label> Name :</label></td>
+                  <td><input type="text" name="name" [(ngModel)]="emp.Name" required/></td>                  
+                </tr>   
+                <tr>
+                    <td><label>Contact :</label></td>
+                    <td><input type="number" name="Contact" [(ngModel)]="emp.Contact" required/></td>                  
+                  </tr>  
+                  <tr>
+                    <td><label>Email :</label></td>
+                    <td><input type="email" name="email" [(ngModel)]="emp.Email" required/></td>                  
+                  </tr>    
+                  <tr>
+                    <td><label>Sex:</label></td>
+                    <td><input type="text" name="sex" [(ngModel)]="emp.Sex" required/></td>                  
+                  </tr>  
+                  <tr>
+                    <td><label>Date of birth:</label></td>
+                    <td><input type="date" name="dob" [(ngModel)]="emp.Date_of_Birth" required/></td>                  
+                  </tr> 
+                  <tr>
+                    <!-- <td></td> -->
+                    <td><button class="btn btn-dark" routerLink="/">Back</button></td>   
+                    <td><input type="submit" value="Submit" [disabled]="add.form.invalid" /></td> 
+                            
+                  </tr>  
+                  
+                
+          </tbody>
+        
+        </table>
+      </form>
+      </div>
+    </div>
+    
+    </div>

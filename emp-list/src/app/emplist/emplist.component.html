@@ -1,0 +1,51 @@
+<div class='card' style="margin: 10px;">
+    <div class='card-header'>
+     {{pageTitle}}     <button style="margin: 10px;" class="btn btn-dark" routerLink="/new">+Add</button>
+    </div>
+
+    <div class='card-body'>            
+      <div class='table-responsive'>
+        <table class='table'>
+              <!-- *ngIf = 'products && products.length'> -->
+          <thead>
+            <tr>
+        
+              <th>Name</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>Date Of Birth</th>
+              <th>Sex</th>
+            </tr>
+           
+          </thead>
+          <tbody>  
+              <tr *ngFor='let emp of employees'>
+                
+                <td>
+                    {{ emp.Name }}</td>
+                  <td>
+                    
+                    {{ emp.Email }}</td>
+                  <td>
+                    
+                    {{ emp.Contact }}</td>
+                  <td>
+                    
+                        {{ emp.Date_of_Birth }}</td>
+                      <td>
+            
+                        {{ emp.Sex }}</td>
+                     
+                      <td>
+                    
+                   
+                    
+                    <button class="btn btn-primary" style="cursor:pointer"  (click)="singleemp(emp)" style="margin-left: 20px;" > See More</button>
+                  </td>
+                </tr>              
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

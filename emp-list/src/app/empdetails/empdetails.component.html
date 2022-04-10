@@ -1,0 +1,46 @@
+
+<div style="margin: 10px;" class='card col-md-4'>
+
+    <div class='card-header'>
+     {{emp.Name}}
+    </div>
+    
+    <div class='card-body '>            
+      <div class='table-responsive'>
+        <table class='table' >
+              <!-- *ngIf = 'products && products.length'> -->
+         
+          <tbody>  
+          <tr>
+            <td>
+              Name:  {{ emp.Name }}</td>
+              </tr>
+              <tr>
+              <td>
+                
+               Email: {{ emp.Email }}</td>
+            </tr>
+            <tr>
+              <td>
+          Contact :{{ emp.Contact }}</td>
+            </tr>
+            <tr>
+              <td>
+                
+                   Date Of Birth : {{ emp.Date_of_Birth }}</td>
+                </tr>
+                <tr>
+                    <td>
+        
+                   Sex: {{ emp.Sex }}</td>
+                 
+                  <td>
+                </tr>       
+          </tbody>
+        </table>
+        <button class="btn btn-warning" style="cursor:pointer"  (click)="edit(emp)" style="margin-left: 20px;" > Edit</button> 
+        <button class="btn btn-danger" style="cursor:pointer" (click)="delete(emp)" style="margin-left: 20px;" > Delete</button>
+        <button class="btn btn-dark" style="margin: 10px;" (click)="back()">Back</button>
+      </div>
+    </div>
+  </div>

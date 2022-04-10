@@ -1,0 +1,43 @@
+<div class='card' style="margin: 10px;">
+    <form (ngSubmit)="edit()">
+<div class='card-header'>
+ Edit Employee
+</div>
+<div class='card-body'>            
+  <div class='table-responsive'>
+    <table class='table'>       
+    
+        <tbody>  
+            
+            <tr>
+                <td> <label> Name :</label></td>
+                <td><input type="text" name="name" [(ngModel)]="emp.Name" /></td>                  
+              </tr>   
+              <tr>
+                  <td><label>Contact :</label></td>
+                  <td><input type="number" name="Contact" [(ngModel)]="emp.Contact" /></td>                  
+                </tr>  
+                <tr>
+                  <td><label>Email :</label></td>
+                  <td><input type="email" name="email" [(ngModel)]="emp.Email" /></td>                  
+                </tr>    
+                <tr>
+                  <td><label>Sex:</label></td>
+                  <td><input type="text" name="sex" [(ngModel)]="emp.Sex" /></td>                  
+                </tr>  
+                <tr>
+                  <td><label>Date of birth:</label></td>
+                  <td><input type="date" name="dob" [(ngModel)]="emp.Date_of_Birth" /></td>                  
+                </tr> 
+                <tr>
+
+                <tr>
+                  <td></td>
+                  <td><input type="submit" value="Submit" /></td>                  
+                </tr>             
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </form>
+  </div>
